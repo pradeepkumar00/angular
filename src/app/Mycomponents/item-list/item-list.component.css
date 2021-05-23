@@ -1,0 +1,10 @@
+.strike{
+    text-decoration: line-through;
+}
+.back{
+    background-color: red;
+    color: white;
+}
+.disabled{
+    display: none;
+}

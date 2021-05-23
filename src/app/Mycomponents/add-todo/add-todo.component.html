@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+    <h3>Add todo</h3>
+<form class="row gy-2 gx-3 align-items-center" (ngSubmit)="onSubmit()">
+  <div class="col-auto">
+    <label class="visually-hidden" for="autoSizingInputGroup">Serial No.</label>
+    <div class="input-group">
+      <div class="input-group-text">Serial No.</div>
+      <input type="number" class="form-control" id="autoSizingInputGroup" name="sr" placeholder="Serial No." [(ngModel)]="sr" required> 
+    </div>
+  </div>
+  <div class="col-auto">
+    <label class="visually-hidden" for="autoSizingInputGroup">Title</label>
+    <div class="input-group">
+      <div class="input-group-text">Title</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Title" name="title" [(ngModel)]="title" required>
+    </div>
+  </div><br><br>
+  <div class="col-auto">
+    <label class="visually-hidden" for="autoSizingInputGroup">Descrition</label>
+    <div class="input-group">
+      <div class="input-group-text">Descrition</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Descrition" name="desc" [(ngModel)]="desc" required>
+    </div>
+  </div><br><br>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary">Add todo</button>
+  </div>
+</form>
+<br>
+<h3>
+    Your todo
+</h3>
+</div>
